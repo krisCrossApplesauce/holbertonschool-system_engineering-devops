@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l -a -p . -p .. -p /boot
+ls -l -a -p . -p .. -p /boot --indicator-style=none
