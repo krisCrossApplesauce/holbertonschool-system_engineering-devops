@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# the variable numCopy will increase by 1 repeatedly once it has run, and FOR every instance where the variable equals any number in the array (1-5), it will DO the function(s) listed (print "Best School"), therefore, it should print a new line saying "Best School" 5 times
+for numCopy in {1..5}
+ do
+   echo "Best School"
+done
