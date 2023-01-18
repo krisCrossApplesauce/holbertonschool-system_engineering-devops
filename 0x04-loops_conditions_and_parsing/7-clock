@@ -2,7 +2,7 @@
 # m (representing minutes) = 1, h (representing hours) = 0, while h is < or = to 12, it checks if m = 60 and h is < 12, if both are true, it adds 1 to h, prints "Hour:" followed by the number that the variable h represents, and then sets m to = 1 before rerunning itself, if one or neither are true, it checks if m doesnt = 60, if so it prints the number that m = before adding 1 to m and rerunning itself, if not, nothing happens
 m=1
 h=0
-while ((h<=12))
+while ((h<13))
 do	
   if ((m==60 && h<12))
   then
