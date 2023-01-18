@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # the variable i is set to equal 1, then, WHILE the variable i is less than or equal to 10, it DOes (runs) the command(s) (echo "Best School" and ((++i))) and then reruns itself
 i=1
-while (( $i<=10 ))
+while (( i<=10 ))
 do
   echo "Best School"
   ((++i))
