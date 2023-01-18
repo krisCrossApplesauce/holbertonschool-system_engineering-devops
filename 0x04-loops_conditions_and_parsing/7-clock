@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# m (representing minutes) = 1, h (representing hours) = 0, while h is < 13, it checks if m = 60, if so, it adds 1 to h and prints "Hour:" followed by the number that the variable h represents and then sets m to = 1, if not, it simply prints the number that m = before adding 1 to m
+# m (representing minutes) = 1, h (representing hours) = 0, while h is < or = to 12, it checks if m = 60, if so, it adds 1 to h and prints "Hour:" followed by the number that the variable h represents and then sets m to = 1, if not, it simply prints the number that m = before adding 1 to m
 m=1
 h=0
-while ((h<13))
+while ((h<=12))
 do
   if ((m==60))
   then
