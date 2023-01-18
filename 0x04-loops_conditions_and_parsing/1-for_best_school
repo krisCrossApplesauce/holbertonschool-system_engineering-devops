@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# the variable i will increase by 1 repeatedly upon being run, and FOR every instance where the variable equals any number in the array (1-10), it will DO the function(s) listed (print "Best School"), therefore, it should print a new line saying "Best School" 10 times
-for i in {1..10}
+# upon being run, the variable i is set to 1 (i=1), and for every time the function loops, the variable i will increase by 1 (i++), and FOR every instance where the variable equals any number less than or equal to 10 (i<=10), it will DO the function(s) listed (print "Best School") and then rerun itself, therefore, it should print a new line saying "Best School" 10 times
+for (( i=1; i<=10; i++ ))
 do
   echo "Best School"
 done
