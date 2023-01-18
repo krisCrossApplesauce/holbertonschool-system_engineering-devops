@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# the variable i is set to equal 1, and UNTIL the variable i is greater than 10, it will DO (run) the command(s) (echo "Best School" and ((i++)))
+i=1
+until ((i>10))
+do
+  echo "Best School"
+  ((i++))
+done
