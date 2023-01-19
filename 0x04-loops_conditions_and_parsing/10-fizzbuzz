@@ -2,13 +2,13 @@
 # description wow
 for (( i=1; i<=100; i++ ))
 do
-	if (( i/15 ))
+	if (( i%15 ))
 	then
 		echo "FizzBuzz"
-	elif (( i/3 ))
+	elif (( i%3 ))
 	then
 		echo "Fizz"
-	elif (( i/5 ))
+	elif (( i%5 ))
 	then
 		echo "Buzz"
 	else
