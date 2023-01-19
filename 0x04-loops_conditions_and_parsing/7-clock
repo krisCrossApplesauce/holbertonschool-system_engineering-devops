@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
-# m (representing minutes) = 1, h (representing hours) = 0, while h is < or = to 12, it checks if m = 60, if so, it adds 1 to h before checking if h is < or = to 12, if so, it prints "Hour:" followed by the number that the variable h represents, and then sets m to = 1 before rerunning itself, if m = 0 but h isnt < or = to 12, nothing happens, then, if m doesnt = 0, it prints the number that m = before adding 1 to m and rerunning itself, if not, nothing happens
+# m (representing minutes) = 1, h (representing hours) = 0, while h is < 13, it prints "Hour:" followed by the number that the variable h represents, then, while m < 60, if so, it prints the number that m represents and adds 1 to m before rerunning itself within the other while function, once m is no longer <60, that while statement stops rerunning itself and it continues to set m = to 1 as well as add 1 to h before rerunning itself
 m=1
 h=0
-while ((h<=12))
-do	
-  if ((m==60))
-  then
-    ((++h))
-    if ((h<=12))
-    then
-      echo "Hour: $h"
-      m=1
-    fi  
-  else
+while ((h<13))
+do
+  echo "Hour: $h"
+  while ((m<60))
+  do
     echo "$m"
     ((++m))
-  fi
+  done
+  ((m=1))
+  ((++h))
 done
