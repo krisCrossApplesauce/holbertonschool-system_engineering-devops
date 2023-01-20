@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # description
+_term() { 
+	  echo "I am invincible!!!"
+    }
 
-trap echo "I am invincible!!!" SIGTERM
+trap _term SIGTERM
 
 while :
 do
