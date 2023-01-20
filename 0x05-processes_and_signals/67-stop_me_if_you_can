@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# description
+pkill -SIGTERM "$(grep -f "7-highlander")"
