@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# description
+i=1
+while (( i==1 ))
+do
+echo "im lazy"
+((++i))
+done
